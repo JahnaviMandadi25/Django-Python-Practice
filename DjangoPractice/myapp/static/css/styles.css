@@ -1,0 +1,176 @@
+/* General body and container settings */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+/* Header styling */
+header {
+    width: 100%;
+    background-color: #e0e0ff; /* Light lavender */
+    color: #34495e;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: 300;
+    text-align: right;
+}
+
+/* "About Me" button styling */
+.about-button {
+    padding: 8px 16px; /* Reduced padding for rectangular shape */
+    background: linear-gradient(90deg, #ff595e, #ffca3a, #8ac926, #1982c4, #6a4c93); /* Rainbow gradient */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px; /* Softer corners */
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.about-button:hover {
+    transform: scale(1.05);
+}
+
+/* Post image styling for consistent squares */
+.post-image {
+    width: 100%;
+    height: 250px; /* Set a fixed square height */
+    object-fit: contain; /* Ensures the full image is shown within the square */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Post list styling */
+.post-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.post-list li {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 5px solid;
+    transition: transform 0.2s;
+}
+
+.post-list li:hover {
+    transform: translateY(-5px);
+}
+
+/* Rainbow color theme for each post */
+.post-list li:nth-child(1) { border-top-color: #ff595e; }
+.post-list li:nth-child(2) { border-top-color: #ffca3a; }
+.post-list li:nth-child(3) { border-top-color: #8ac926; }
+.post-list li:nth-child(4) { border-top-color: #1982c4; }
+.post-list li:nth-child(5) { border-top-color: #6a4c93; }
+.post-list li:nth-child(6) { border-top-color: #ff6f91; }
+.post-list li:nth-child(7) { border-top-color: #ff9671; }
+.post-list li:nth-child(8) { border-top-color: #ffc75f; }
+.post-list li:nth-child(9) { border-top-color: #f9f871; }
+
+.post-list a {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.post-list a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.post-list p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Footer styling */
+footer {
+    width: 100%;
+    background-color: #CCCCFF; /* Match the header color */
+    color: #34495e;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.post-detail-image {
+    display: block;
+    width: 100%;
+    max-width: 500px; /* Set a maximum width for consistency */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center-align the image */
+    border-radius: 8px; /* Optional: add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better aesthetics */
+}
+/* styles.css */
+
+/* Post detail page styling */
+.post-detail-container {
+    background: linear-gradient(135deg, #ffebf0, #fff5e6, #eafff5, #e6f0ff, #f5e6ff);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.post-detail-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+/* Text styling for post title and content */
+.post-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.post-content {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 20px;
+    text-align: justify;
+}
+

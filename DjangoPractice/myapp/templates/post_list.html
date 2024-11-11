@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>JustAnotherGay Blog</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+<header>
+    <div class="title">JustAnotherGay</div>
+    <div class="subtitle">A personal journey of finding happiness while talking about LGBTQ+ rights and mental health awareness</div>
+    <a href="{% url 'about_me' %}" class="about-button">About Me</a>
+</header>
+
+
+    <div class="container">
+    <ul class="post-list">
+    {% for post in posts %}
+        <li>
+            {% if post.image %}
+                <img src="{{ post.image.url }}" alt="{{ post.title }}" class="post-image">
+            {% endif %}
+            <a href="{% url 'post_detail' post.slug %}">{{ post.title }}</a>
+            <p>By {{ post.author }} on {{ post.created_at }}</p>
+        </li>
+    {% endfor %}
+</ul>
+
+</div>
+
+
+    <footer>
+        &copy; {{ year }} JustAnotherGay Blog. All rights reserved.
+    </footer>
+</body>
+</html>
